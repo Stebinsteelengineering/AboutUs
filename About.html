@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl!--->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<title> An About Us Page | CoderGirl </title>-->
+  <!---Custom Css File!--->
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+     *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  height: 10vh;
+  display: absolute;
+  background: #2f283b;
+}
+
+nav{
+  background: #000000;
+  padding: 0px 40px;
+}
+nav ul{
+  
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #44f84d;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+nav li a:hover:before{
+  width: 100%;
+}
+nav li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+nav li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+nav li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+nav li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+  margin-left: 35px;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: #44f84d;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 10px 0;
+  background: #31313149;
+}
+.pic{
+  height: auto;
+  width:  500px;
+  margin-left: -40px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  margin-top: 10px;
+  width: 540px;
+  color: #fff;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-inline: 0px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+          <img class="logo-img" src="/Images/logo.jpeg" width="85" height="85" alt="Logo" Align="margin-top" >
+           <li class="logo">ABOUT US!!!</li>
+           <li class="items"><a href="https://stebinsabu.github.io/.com/">Home</a></li>
+           <li class="items"><a href="#">About</a></li>
+           <li class="items"><a href="https://stebinsabu.github.io/Gallery/">Gallery</a></li>
+           <li class="items"><a href="#">Contact</a></li>
+           <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+     </nav>
+  <section class="about-us">
+    <div class="about">
+      <img src="/Images/weld.jpeg" class="pic">
+      <div class="text">
+        <h5><b>Stebin Steel Engineering Works</b></h5>
+          <p>We are a family owned and operated company that has been providing quality services to the local community since 1999. We are specialist in Fabrication & Welding, Pipe bending, Terrace shade works, Safety doors, Garden equipments,etc.</p>
+<p> We are constantly striving to improve ourselves by offering our customers the best possible products at affordable prices. We also offer free advice on any aspect of your project so you can be confident that we will deliver a product that exceeds your expectations.</p>
+<p>We have been delivering greatness for over 15 years now and we look forward to continuing our journey with you.</p>
+        <div class="data">
+        <a href="tel:+919823220777" class="hire">Call us +91-9823-22-0777</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
